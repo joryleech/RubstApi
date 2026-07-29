@@ -67,6 +67,7 @@ through one cohesive, Rack-compatible API.
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Quick start](#quick-start)
+- [Official sample project](#official-sample-project)
 - [Parameters and validation](#parameters-and-validation)
 - [Models](#models)
 - [Dependency injection](#dependency-injection)
@@ -198,6 +199,11 @@ Invalid input receives a structured `422 Unprocessable Entity` response:
   ]
 }
 ```
+
+## Official sample project
+
+For a complete, runnable example, see
+[joryleech/RubstApi-Sample-Project](https://github.com/joryleech/RubstApi-Sample-Project).
 
 ## Parameters and validation
 
