@@ -53,6 +53,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rack", ">= 3.0", "< 4.0"
   spec.add_dependency "rackup", ">= 2.0", "< 3.0"
   spec.add_dependency "webrick", ">= 1.8", "< 2.0"
+  spec.add_dependency "base64", ">= 0.3", "< 1.0"
 
   spec.add_development_dependency "minitest", ">= 5.0", "< 7.0"
   spec.add_development_dependency "rake", ">= 13.0", "< 14.0"
