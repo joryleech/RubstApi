@@ -1,0 +1,36 @@
+# Bundler
+/.bundle/
+/vendor/bundle/
+
+# Built gems and packaged artifacts
+/*.gem
+/pkg/
+
+# Test coverage and temporary output
+/coverage/
+/tmp/
+/log/
+/.yardoc/
+/doc/
+
+# Ruby and development tools
+/.ruby-lsp/
+/.solargraph.yml
+/.rspec_status
+
+# Environment and local configuration
+/.env
+/.env.*
+!/.env.example
+
+# Editors
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*~
+
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
