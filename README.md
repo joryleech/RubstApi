@@ -65,7 +65,8 @@ through one cohesive, Rack-compatible API.
 - **Rack compatible:** Mount RubstAPI beside existing Ruby and Rack
   applications.
 - **Focused operational footprint:** Runtime dependencies are limited to Rack,
-  Rackup, and WEBrick for the framework's HTTP interface and bundled CLI.
+  Rackup, WEBrick, and Base64 for the HTTP interface, bundled CLI, and
+  authentication helpers.
 
 ## Contents
 
@@ -96,13 +97,11 @@ through one cohesive, Rack-compatible API.
 - A Rack-compatible server for serving HTTP
 
 The built-in `rubst_api run` and `rubst_api dev` commands use Rackup and
-WEBrick. Add these server dependencies to your application:
+WEBrick. These dependencies, along with Base64 for authentication helpers, are
+installed automatically with RubstAPI:
 
 ```ruby
 gem "rubst_api"
-gem "rack", ">= 3.0"
-gem "rackup", ">= 2.0"
-gem "webrick", ">= 1.8"
 ```
 
 ## Installation

@@ -12,6 +12,11 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Professional RubyGems package metadata and canonical repository links.
 - FastAPI license attribution and third-party notices.
 
+### Fixed
+
+- Declare `base64` as a runtime dependency for Ruby 3.4 and newer, where it is
+  no longer available as a default gem.
+
 ## [0.1.0] - 2026-07-29
 
 ### Added
