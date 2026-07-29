@@ -2,6 +2,12 @@
 
 ### A FastAPI-inspired framework for building typed Ruby APIs
 
+[![Gem Version](https://img.shields.io/gem/v/rubst_api?logo=rubygems&logoColor=white)](https://rubygems.org/gems/rubst_api)
+[![Ruby Version](https://img.shields.io/gem/ruby-version/rubst_api?logo=ruby&logoColor=white)](https://rubygems.org/gems/rubst_api)
+[![License](https://img.shields.io/github/license/joryleech/RubstApi)](LICENSE)
+[![OpenAPI 3.1](https://img.shields.io/badge/OpenAPI-3.1-6BA539?logo=openapiinitiative&logoColor=white)](https://spec.openapis.org/oas/v3.1.0)
+[![GitHub](https://img.shields.io/badge/GitHub-joryleech%2FRubstApi-181717?logo=github)](https://github.com/joryleech/RubstApi)
+
 RubstAPI is a Ruby REST API framework that brings the developer experience of
 [Python FastAPI](https://fastapi.tiangolo.com/) to Rack applications. Define
 typed request parameters and data models once, then receive validation,
