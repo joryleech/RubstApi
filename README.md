@@ -59,8 +59,8 @@ through one cohesive, Rack-compatible API.
   and API keys in headers, queries, or cookies.
 - **Rack compatible:** Mount RubstAPI beside existing Ruby and Rack
   applications.
-- **Small operational footprint:** The core gem has no mandatory runtime gem
-  dependencies.
+- **Focused operational footprint:** Runtime dependencies are limited to Rack,
+  Rackup, and WEBrick for the framework's HTTP interface and bundled CLI.
 
 ## Contents
 
@@ -604,13 +604,8 @@ and avoid claiming compatibility that is not covered by tests.
 
 ## Security policy
 
-Do not disclose suspected vulnerabilities in a public issue. Contact the
-maintainers privately through the security-reporting channel published by the
-project repository. Include reproduction steps, affected versions, impact, and
-any suggested mitigation.
-
-Until a public security contact is configured, do not use RubstAPI for systems
-whose risk profile requires a formal vulnerability-response service.
+Do not disclose suspected vulnerabilities in a public issue. Follow the private
+reporting instructions in [SECURITY.md](SECURITY.md).
 
 ## License
 
