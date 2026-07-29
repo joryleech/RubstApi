@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "optparse"
+require "rubst_api"
+
+options = { host: "127.0.0.1", port: 8000 }
+command = ARGV.shift || "help"
+OptionParser.new do |parser|
+  parser.on("--host HOST") { |value| options[:host] = value }
+  parser.on("--port PORT", Integer) { |value| options[:port] = value }
+end.parse!
+
+if %w[run dev].include?(command)
+  file = ARGV.shift || "app.rb"
+  require File.expand_path(file)
+  app = Object.const_defined?(:APP) ? APP : Object.const_defined?(:App) ? App : nil
+  abort "Define APP = RubstApi::App.new in #{file}" unless app
+  begin
+    require "rack"
+    require "rackup"
+    handler = Rackup::Handler.get("webrick")
+    handler.run(app, Host: options[:host], Port: options[:port])
+  rescue LoadError
+    abort "The server command requires the optional rack and rackup gems."
+  end
+else
+  puts "Usage: rubst_api [dev|run] [app.rb] [--host HOST] [--port PORT]"
+end
